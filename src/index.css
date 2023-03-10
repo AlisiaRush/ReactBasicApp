@@ -1,0 +1,20 @@
+body{
+    padding-top:20px;
+    background: #00b09b;
+    background: -webkit-linear-gradient(to right, #00b096, #96c93d);
+    background: linear-gradient(to right, #00b096, #96c93d);
+    min-height: 100vh;
+}
+
+.media-body{
+    width:90%;
+}
+
+.text-gray{
+    color: #aaa;
+}
+
+.bage-margin-left-240{
+    margin-left:240px;
+}
+

@@ -1,25 +1,29 @@
-function Products() {
+import React from "react"; // manditory in older React Apps only. Good practice to include anyway
+import "./Products.css";
+import ProductDetails from "./ProductDetails";
+
+function Products(props) {
   return (
-    <ul>
-      <li>
-        <div>
-          <div>
-            <h5>Fresh Milk</h5>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Suscripit fuga autem maiores
-            </p>
-            <div>
-              <h6>$120.00</h6>
-            </div>
-          </div>
-          <img src="" width="200" />
+    <li className="list-group-item">
+      <div className="media align-items-lg-center flex-column flex-lg-row p-3 d-flex">
+        <div className="media-body order-2 order-lg-1">
+          <h5 className="mt-0 font-weight-bold mb-2">{props.name}</h5>
+          <p className="font-italic text-muted mb-0 small">
+            {props.description}
+          </p>
+          <ProductDetails
+            price={props.price}
+            isAvailable={props.isAvailable}
+          ></ProductDetails>
         </div>
-      </li>
-    </ul>
+        <img
+          src={props.imageUrl}
+          className="ml-lg-5 order-1 order-lg-2"
+          alt=""
+        />
+      </div>
+    </li>
   );
 }
-
-// React.createElement();
 
 export default Products;
