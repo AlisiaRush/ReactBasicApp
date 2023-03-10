@@ -1,6 +1,6 @@
 // create using javaScript function
 import "./app.css";
-import Products from "./components/products";
+import Products from "./components/Products";
 
 const products = [
   {

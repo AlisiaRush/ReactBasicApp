@@ -1,3 +1,5 @@
+import Button from "./Button";
+
 let productCount = 0;
 
 function displayFormattedProductCount() {
@@ -13,11 +15,11 @@ function ProductDetails(props) {
       <h6 className="font-weight-bold my-2" style={{ marginRight: "30px" }}>
         {props.price}
       </h6>
-      <button className="btn btn-primary">-</button>
+      <Button>-</Button>
       <span style={{ padding: "0 20px", fontSize: 13 }}>
         {displayFormattedProductCount()}
       </span>
-      <button className="btn btn-primary">+</button>
+      <Button>+</Button>
 
       <span className={badgeClass}>
         {props.isAvailable ? "Available" : "Unavailable"}
