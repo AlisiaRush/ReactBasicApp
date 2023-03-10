@@ -2,6 +2,10 @@ import "./products.css";
 
 let productCount = 0;
 let freshMilkImage = require("../images/freshMilk.png");
+let isAvailable = "Available";
+
+let badgeClass = "bage-margin-left-240 badge";
+badgeClass += isAvailable === "Available" ? " bg-success " : " bg-danger ";
 
 function displayFormattedProductCount() {
   return productCount > 0 ? productCount : "Zero";
@@ -30,6 +34,8 @@ function Products() {
                 {displayFormattedProductCount()}
               </span>
               <button className="btn btn-primary">+</button>
+
+              <span className={badgeClass}>{isAvailable}</span>
             </div>
           </div>
           <img
