@@ -6,6 +6,10 @@ body{
     min-height: 100vh;
 }
 
+.media-body{
+    width:90%;
+}
+
 .text-gray{
     color: #aaa;
 }
@@ -13,3 +17,4 @@ body{
 .bage-margin-left-240{
     margin-left:240px;
 }
+
