@@ -1,4 +1,7 @@
+import "./products.css";
+
 let productCount = 0;
+let freshMilkImage = require("../images/freshMilk.png");
 
 function displayFormattedProductCount() {
   return productCount > 0 ? productCount : "Zero";
@@ -16,15 +19,21 @@ function Products() {
               Suscripit fuga autem maiores
             </p>
             <div className="d-flex align-items-center justify-content-start mt-1">
-              <h6 className="font-weight-bold my-2">$120.00</h6>
+              <h6
+                className="font-weight-bold my-2"
+                style={{ marginRight: "30px" }}
+              >
+                $120.00
+              </h6>
               <button className="btn btn-primary">-</button>
-              <span>{displayFormattedProductCount()}</span>
+              <span style={{ padding: "0 20px", fontSize: 13 }}>
+                {displayFormattedProductCount()}
+              </span>
               <button className="btn btn-primary">+</button>
             </div>
           </div>
           <img
-            src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg"
-            width="200"
+            src={freshMilkImage}
             className="ml-lg-5 order-1 order-lg-2"
             alt=""
           />
