@@ -1,6 +1,8 @@
-// create using javaScript function
+import React from "react"; // manditory in older React Apps only. Good practice to include anyway
 import "./app.css";
 import Products from "./components/Products";
+
+// create using javaScript function
 
 const products = [
   {

@@ -1,3 +1,4 @@
+import React from "react"; // manditory in older React Apps only. Good practice to include anyway
 import "./Products.css";
 import ProductDetails from "./ProductDetails";
 

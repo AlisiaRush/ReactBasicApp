@@ -1,3 +1,4 @@
+import React from "react"; // manditory in older React Apps only. Good practice to include anyway
 import Button from "./Button";
 
 let productCount = 0;
@@ -26,6 +27,25 @@ function ProductDetails(props) {
       </span>
     </div>
   );
+
+  //   return (
+  //     React.createElement("div", {
+  //       className: "d-flex align-items-center justify-content-start mt-1",
+  //     }),
+  //     React.createElement(
+  //       "h6",
+  //       { className: "font-weight-bold my-2", style: { marginRight: "30px" } },
+  //       "$" + props.price
+  //     ),
+  //     React.createElement(Button, {}, "-"),
+  //     React.createElement("span", { style: { padding: "0 20px", fontSize: 13 } }),
+  //     React.createElement(Button, {}, "+"),
+  //     React.createElement(
+  //       "span",
+  //       { className: badgeClass },
+  //       props.isAvailable ? "Available" : "Unavailable"
+  //     )
+  //   );
 }
 
 export default ProductDetails;
