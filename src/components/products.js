@@ -3,6 +3,7 @@ import "./Products.css";
 import ProductDetails from "./ProductDetails";
 
 function Products(props) {
+  console.log("Product Component executed!"); // Checking for useState hook.
   return (
     <li className="list-group-item">
       <div className="media align-items-lg-center flex-column flex-lg-row p-3 d-flex">

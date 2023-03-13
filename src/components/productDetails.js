@@ -2,9 +2,10 @@ import React, { useState } from "react"; // manditory in older React Apps only. 
 import Button from "./Button";
 
 function ProductDetails(props) {
+  console.log("Product Details Component executed!"); // Checking for useState hook.
   //   let productCount = 0;
 
-  let [productCount, updateCount] = useState(0);
+  let [productCount, updateCount] = useState(0); // registering a state for specific component instance
 
   function displayFormattedProductCount() {
     return productCount > 0 ? productCount : "Zero";
